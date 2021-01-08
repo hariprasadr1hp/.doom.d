@@ -1,0 +1,4 @@
+#+TITLE:   doom-config
+#+AUTHOR: Hari Prasad Radhakrishnan
+
+=./doom.d= config files for /doom emacs/
