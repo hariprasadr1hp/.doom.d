@@ -7,6 +7,11 @@
 (global-set-key (kbd "C-<") 'indent-rigidly-left-to-tab-stop)
 
 
+
+;; commenting lines
+(global-set-key (kbd "C-/") 'comment-line)
+
+
 ;; toggle menubar
 (map! 
 	:leader
