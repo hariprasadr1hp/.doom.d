@@ -7,7 +7,6 @@
 (global-set-key (kbd "C-<") 'indent-rigidly-left-to-tab-stop)
 
 
-
 ;; commenting lines
 (global-set-key (kbd "C-/") 'comment-line)
 
@@ -18,7 +17,11 @@
 	:desc "menu bar mode"
 	"t m" #'menu-bar-mode)
 
-
+;; toggle clock
+(map!
+	:leader
+	:desc "display time mode"
+	"t c" #'display-time-mode)
 
 ;; Doom Emacs uses ~SPC t~ for "toggle" commands, so ~SPC t t~ is chosen for toggle-truncate-lines.
 (setq display-line-numbers-type t)

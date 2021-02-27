@@ -1,12 +1,15 @@
 ;;; modes/+config.el -*- lexical-binding: t; -*-
 
+(load! "+basic")
 (load! "+bookmarks")
 (load! "+deft")
 (load! "+dired")
 (load! "+emms")
 (load! "+elisp")
+(load! "+evil")
 (load! "+eww")
 (load! "+magit")
 (load! "+misc")
+(load! "+projectile")
 (load! "+registers")
 (load! "+winner")

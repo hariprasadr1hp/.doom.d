@@ -7,10 +7,6 @@
     user-full-name "Hari Prasad Radhakrishnan"
     user-mail-address "hariprasadr1hp@tutanota.com")
 
-
-(after! projectile
-  (setq projectile-project-search-path '("~/my/projects/" "~/apple/")))
-
 ;; -------------------------------------------------------------
 
 
