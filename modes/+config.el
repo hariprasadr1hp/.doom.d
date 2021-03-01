@@ -2,6 +2,7 @@
 
 (load! "+basic")
 (load! "+bookmarks")
+(load! "+company")
 (load! "+deft")
 (load! "+dired")
 (load! "+emms")
