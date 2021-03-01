@@ -1,4 +1,4 @@
-;;; lang/org.el -*- lexical-binding: t; -*-
+;;; modes/org.el -*- lexical-binding: t; -*-
 
 
 ;; If you use `org' and don't want your org files in the default location below,

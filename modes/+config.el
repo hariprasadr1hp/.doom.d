@@ -12,5 +12,6 @@
 (load! "+magit")
 (load! "+misc")
 (load! "+projectile")
+(load! "+org")
 (load! "+registers")
 (load! "+winner")
