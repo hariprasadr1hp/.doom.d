@@ -4,6 +4,8 @@
 
 (package! all-the-icons-dired)
 (package! ascii-art-to-unicode)
+(package! company-org-roam
+   :recipe (:host github :repo "jethrokuan/company-org-roam"))
 (package! deadgrep)
 (package! dired-open)
 (package! emms)
@@ -11,8 +13,10 @@
 (package! move-text)
 (package! org-brain)
 (package! org-fancy-priorities)
+(package! org-roam-server)
 (package! org-super-agenda)
 (package! origami)
+(package! simple-httpd)
 (package! sql-indent)
 (package! vue-mode)
 (package! wakatime-mode)

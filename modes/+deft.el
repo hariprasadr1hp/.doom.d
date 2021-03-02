@@ -1,5 +1,17 @@
 ;;; modes/+deft.el -*- lexical-binding: t; -*-
 
-(setq deft-directory '("~/my/org")
-      deft-extensions '("org" "txt")
-      deft-recursive t)
+
+(use-package deft
+  :after org
+  :bind
+  ("C-c n d" . deft)
+  :custom
+  (deft-recursive t)
+  (deft-use-filter-string-for-filename t)
+  (deft-default-extension "org")
+  (deft-extensions '("org" "txt"))
+  (deft-directory "~/my/org"))
+  
+      
+      
+      
