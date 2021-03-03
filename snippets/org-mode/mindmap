@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: hugo
+# key: hugo
+# --
+#+begin_src plantuml :file mindmap.eps
+@startmindmap
+!define LIGHTGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+,* Debian
+,** Ubuntu
+,*** Linux Mint
+,*** Kubuntu
+,** LMDE
+,** Raspbian with a very long name
+,*** <s>Raspmbc</s> => OSMC
+,*** <s>Raspyfi</s> => Volumio
+@endmindmap
+#+end_src
+
