@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name:begin_latex 
+# key: <lat
+# --
+\begin{latex}
+$0
+\end{latex}

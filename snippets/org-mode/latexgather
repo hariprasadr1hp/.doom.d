@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: latexgather
+# key: <ga
+# --
+\begin{gather}\label{eq:$1}
+$0
+\end{gather}
