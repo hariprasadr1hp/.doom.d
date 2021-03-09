@@ -9,6 +9,9 @@
 (setq org-directory "~/my/org/")
 ;;(global-company-mode '(not org-mode))
 
+;;shift select
+(setq org-support-shift-select t)
+
 ;; org-ellipsis
 (setq org-ellipsis " ▾ ")
 
@@ -157,6 +160,15 @@
         org-roam-server-network-label-truncate t
         org-roam-server-network-label-truncate-length 60
         org-roam-server-network-label-wrap-length 20))      
+
+
+(require 'company-org-roam)
+    (use-package company-org-roam
+      :when (featurep! :completion company)
+      :after org-roam
+      :config
+      (set-company-backend! 'org-mode '(company-org-roam company-yasnippet company-dabbrev)))
+
       
 ;;-------------------------------------------------------------
 ;; 
