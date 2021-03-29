@@ -9,7 +9,8 @@
 
 
 (use-package org-roam-server
-  :ensure nil
+  :ensure t
+  :after (org-roam server)
   :load-path "~/my/org/org-roam-server"
   :config
   (setq org-roam-server-host "127.0.0.1"
@@ -17,9 +18,15 @@
         org-roam-server-authenticate nil
         org-roam-server-export-inline-images t
         org-roam-server-serve-files nil
-        org-roam-server-served-file-extensions '("pdf" "mp4" "ogv")
+        org-roam-server-served-file-extensions '("pdf" "mp4" "ogv" "svg")
         org-roam-server-network-poll t
-        org-roam-server-network-arrows nil
+        org-roam-server-network-arrows t
         org-roam-server-network-label-truncate t
         org-roam-server-network-label-truncate-length 60
-        org-roam-server-network-label-wrap-length 20))
+        org-roam-server-network-label-wrap-length 20)
+
+  (defun org-roam-server-open ()
+    "Ensure the server is active, then open the roam graph."
+    (interactive)
+    (org-roam-server-mode 1)
+    (browse-url-xdg-open (format "http://localhost:%d" org-roam-server-port))))

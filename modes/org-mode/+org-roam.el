@@ -8,7 +8,7 @@
 (use-package org-roam
   :load-path
   ("~/my/org/roam/")
-  :ensure t
+  ;;:ensure t
   :hook
     ((after-init . org-roam-mode))
   :custom
