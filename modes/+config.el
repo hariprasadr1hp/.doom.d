@@ -6,6 +6,7 @@
 (load! "+deft")
 (load! "+dired")
 (load! "+emms")
+(load! "elfeed-mode/+config")
 (load! "+elisp")
 (load! "+eshell")
 (load! "+evil")
