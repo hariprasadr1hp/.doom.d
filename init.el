@@ -18,7 +18,7 @@
        :completion
        (company         ; the ultimate code completion backend
         +tng
-        +auto           ; code completion, as you type
+        ;;+auto           ; code completion, as you type
         +childframe)    ; nicer ui
        ;;helm           ; the *other* search engine for love and life
        ;;ido            ; the other *other* search engine...
@@ -153,8 +153,8 @@
         +fold)            ; fold the clutter away
        ;;lean
        ;;factor
-       ;;ledger            ; an accounting system in Emacs
-       ;;lua               ; one-based indices? one-based indices
+       ledger            ; an accounting system in Emacs
+       (lua +lsp)               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"

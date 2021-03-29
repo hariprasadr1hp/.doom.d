@@ -10,6 +10,8 @@
 (load! "+eshell")
 (load! "+evil")
 (load! "+eww")
+(load! "lsp-mode/+config")
+(load! "+ledger")
 (load! "+magit")
 (load! "+misc")
 (load! "+projectile")

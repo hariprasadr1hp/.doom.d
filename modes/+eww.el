@@ -30,10 +30,10 @@
 	:desc "Search web for text between BEG/END" "s w" #'eww-search-words
 
 	:leader
-	:desc "Eww previous page" "k b" #'eww-back-url
+	:desc "Eww previous page" "k h" #'eww-back-url
 
 	:leader
-	:desc "Eww next page" "k f" #'eww-forward-url
+	:desc "Eww next page" "k l" #'eww-forward-url
 
 	:leader
 	:desc "Eww view source code" "k i" #'eww-view-source
