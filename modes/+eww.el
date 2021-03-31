@@ -16,26 +16,27 @@
 
 
 (setq browse-url-browser-function 'eww-browse-url)
+
 (map!
-	:leader
-	:desc "Eww web browser" "k q" #'eww
+ :leader
+ :desc "Eww web browser" "k q" #'eww
 
-	:leader
-	:desc "Eww reload page" "k r" #'eww-reload
+ :leader
+ :desc "Eww reload page" "k r" #'eww-reload
 
-	:leader
-	:desc "Search web for text between BEG/END" "k s" #'eww-search-words
+ :leader
+ :desc "Search web for text between BEG/END" "k s" #'eww-search-words
 
-	:leader
-	:desc "Search web for text between BEG/END" "s w" #'eww-search-words
+ :leader
+ :desc "Search web for text between BEG/END" "s w" #'eww-search-words
 
-	:leader
-	:desc "Eww previous page" "k h" #'eww-back-url
+ :leader
+ :desc "Eww previous page" "k h" #'eww-back-url
 
-	:leader
-	:desc "Eww next page" "k l" #'eww-forward-url
+ :leader
+ :desc "Eww next page" "k l" #'eww-forward-url
 
-	:leader
-	:desc "Eww view source code" "k i" #'eww-view-source
+ :leader
+ :desc "Eww view source code" "k i" #'eww-view-source
 )
 

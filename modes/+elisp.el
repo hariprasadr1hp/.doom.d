@@ -12,18 +12,17 @@
 
 
 (map!
-	:leader
-	:desc "Evaluate elisp in buffer" "e b" #'eval-buffer
+ :leader
+ :desc "Evaluate elisp in buffer" "e b" #'eval-buffer
 
-	:leader
-	:desc "Evaluate defun" "e d" #'eval-defun
+ :leader
+ :desc "Evaluate defun" "e d" #'eval-defun
 
-	:leader
-	:desc "Evaluate elisp expression" "e e" #'eval-expression
+ :leader
+ :desc "Evaluate elisp expression" "e e" #'eval-expression
 
-	:leader
-	:desc "Evaluate last sexpression" "e x" #'eval-last-sexp
+ :leader
+ :desc "Evaluate last sexpression" "e x" #'eval-last-sexp
 
-	:leader
-	:desc "Evaluate elisp in region" "e r" #'eval-region
-)
+ :leader
+ :desc "Evaluate elisp in region" "e r" #'eval-region)

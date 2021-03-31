@@ -19,36 +19,35 @@
 
 
 (map!
-	:leader
-	:desc "Copy to register" "r c" #'copy-to-register
+ :leader
+ :desc "Copy to register" "r c" #'copy-to-register
 
-	:leader
-	:desc "Frameset to register" "r f" #'frameset-to-register
+ :leader
+ :desc "Frameset to register" "r f" #'frameset-to-register
 
-	:leader
-	:desc "Insert contents of register" "r i" #'insert-register
+ :leader
+ :desc "Insert contents of register" "r i" #'insert-register
 
-	:leader
-	:desc "Jump to register" "r j" #'jump-to-register
+ :leader
+ :desc "Jump to register" "r j" #'jump-to-register
 
-	:leader
-	:desc "List registers" "r l" #'list-registers
+ :leader
+ :desc "List registers" "r l" #'list-registers
 
-	:leader
-	:desc "Number to register" "r n" #'number-to-register
+ :leader
+ :desc "Number to register" "r n" #'number-to-register
 
-	:leader
-	:desc "Interactively choose a register" "r r" #'counsel-register
+ :leader
+ :desc "Interactively choose a register" "r r" #'counsel-register
 
-	:leader
-	:desc "View a register" "r v" #'view-register
+ :leader
+ :desc "View a register" "r v" #'view-register
 
-	:leader
-	:desc "Window configuration to register" "r w" #'window-configuration-to-register
+ :leader
+ :desc "Window configuration to register" "r w" #'window-configuration-to-register
 
-	:leader
-	:desc "Increment register" "r +" #'increment-register
+ :leader
+ :desc "Increment register" "r +" #'increment-register
 
-	:leader
-	:desc "Point to register" "r SPC" #'point-to-register
-)
+ :leader
+ :desc "Point to register" "r SPC" #'point-to-register)

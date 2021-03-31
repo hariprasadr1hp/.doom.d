@@ -30,47 +30,45 @@
 (emms-playing-time 1)
 
 (setq
-	emms-source-file-default-directory "~/Music/"
-	emms-playlist-buffer-name "*Music*"
-	emms-info-asynchronously t
-	emms-source-file-directory-tree-function 'emms-source-file-directory-tree-find
-)
+ emms-source-file-default-directory "~/Music/"
+ emms-playlist-buffer-name "*Music*"
+ emms-info-asynchronously t
+ emms-source-file-directory-tree-function 'emms-source-file-directory-tree-find)
 
 
 (map!
-	:leader
-	:desc "Go to emms current" "a q" #'emms
+ :leader
+ :desc "Go to emms current" "a q" #'emms
 
-	:leader
-	:desc "Go to emms playlist" "a a" #'emms-playlist-mode-go
+ :leader
+ :desc "Go to emms playlist" "a a" #'emms-playlist-mode-go
 
-	:leader
-	:desc "Emms pause track" "a s" #'emms-pause
+ :leader
+ :desc "Emms pause track" "a s" #'emms-pause
 
-	:leader
-	:desc "Emms stop track" "a x" #'emms-stop
+ :leader
+ :desc "Emms stop track" "a x" #'emms-stop
 
-	:leader
-	:desc "Emms play previous track" "a p" #'emms-previous
+ :leader
+ :desc "Emms play previous track" "a p" #'emms-previous
 
-	:leader
-	:desc "Emms play next track" "a n" #'emms-next
+ :leader
+ :desc "Emms play next track" "a n" #'emms-next
 
-	:leader
-	:desc "Emms toggle repeat track" "a r" #'emms-toggle-repeat-track
+ :leader
+ :desc "Emms toggle repeat track" "a r" #'emms-toggle-repeat-track
 
-	:leader
-	:desc "Emms volume lower" "a ," #'emms-volume-lower
+ :leader
+ :desc "Emms volume lower" "a ," #'emms-volume-lower
 
-	:leader
-	:desc "Emms volume upper" "a ." #'emms-volume-raiseyy
+ :leader
+ :desc "Emms volume upper" "a ." #'emms-volume-raiseyy
 
-	:leader
-	:desc "Emms seek backward" "a [" #'emms-seek-backward
+ :leader
+ :desc "Emms seek backward" "a [" #'emms-seek-backward
 
-	:leader
-	:desc "Emms seek forward" "a ]" #'emms-seek-forward
+ :leader
+ :desc "Emms seek forward" "a ]" #'emms-seek-forward
 
-	:leader
-	:desc "Emms shuffle" "a ~" #'emms-shuffle
-)
+ :leader
+ :desc "Emms shuffle" "a ~" #'emms-shuffle)

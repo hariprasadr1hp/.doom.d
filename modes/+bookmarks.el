@@ -8,9 +8,8 @@
 
 
 (map!
-	:leader
-	:desc "List bookmarks" "b L" #'list-bookmarks
+ :leader
+ :desc "List bookmarks" "b L" #'list-bookmarks
 
-	:leader
-	:desc "Save current bookmarks to bookmark file" "b w" #'bookmark-save
-)
+ :leader
+ :desc "Save current bookmarks to bookmark file" "b w" #'bookmark-save)

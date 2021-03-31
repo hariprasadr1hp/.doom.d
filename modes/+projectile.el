@@ -2,4 +2,3 @@
 
 (after! projectile
   (setq projectile-project-search-path '("~/my/projects/" "~/my/org")))
-
