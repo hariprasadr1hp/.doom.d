@@ -3,7 +3,9 @@
 
 
 (package! all-the-icons-dired)
+(package! annotate)
 (package! ascii-art-to-unicode)
+(package! calibredb)
 (package! company-org-roam
    :recipe (:host github :repo "jethrokuan/company-org-roam"))
 (package! deadgrep)
@@ -13,12 +15,21 @@
 (package! gruvbox-theme)
 (package! graphviz-dot-mode)
 (package! move-text)
+(package! ob-prolog)
 (package! origami)
+(package! org-brain)
+(package! org-noter)
+(package! org-noter-pdftools)
+(package! org-roam-bibtex)
+(package! org-roam-server)
+(package! org-super-agenda)
+(package! pass)
 (package! pocket-reader)
 (package! simple-httpd)
 (package! sql-indent)
 (package! vue-mode)
 (package! wakatime-mode)
+(package! zotero)
 
 
 

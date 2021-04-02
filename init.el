@@ -164,7 +164,6 @@
        (org                ; organize your plain life in plain text
         +attach
         +babel
-        +brain
         +capture
         +dragndrop         ; drap and drop files/images into org buffers
         +export
@@ -178,9 +177,8 @@
         +pomodoro          ; pomodoro for org-mode
         +pretty            ; pretty unicode symbols
         +present           ; using org-mode for presentation
-        +roam              ; wander around notes
-        +roam-server
-        +super-agenda)
+        +roam)             ; wander around notes
+
        ;;php               ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more--
        ;;purescript        ; javascript, but functional
