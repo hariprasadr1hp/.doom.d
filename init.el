@@ -17,9 +17,10 @@
 
        :completion
        (company         ; the ultimate code completion backend
-        +tng
-        ;;+auto           ; code completion, as you type
-        +childframe)    ; nicer ui
+        ;;+auto         ; code completion, as you type
+        +childframe     ; nicer ui
+        +lsp
+        +tng)
        ;;helm           ; the *other* search engine for love and life
        ;;ido            ; the other *other* search engine...
        (ivy
@@ -71,7 +72,8 @@
 
        :emacs
        (dired             ; making dired pretty [functional]
-        +icons)
+        +icons
+        +open)
        electric          ; smarter, keyword-based electric-indent
        ;;ibuffer         ; interactive buffer management
        (undo +tree)      ; persistent, smarter undo for your inevitable mistakes
@@ -162,9 +164,11 @@
        (org                ; organize your plain life in plain text
         +attach
         +babel
+        +brain
         +capture
         +dragndrop         ; drap and drop files/images into org buffers
         +export
+        +fancy-priorities
         +gnuplot           ; gnuplot for orgmode
         +hugo              ; use emacs for hugo blogging
         +ipython
@@ -174,7 +178,9 @@
         +pomodoro          ; pomodoro for org-mode
         +pretty            ; pretty unicode symbols
         +present           ; using org-mode for presentation
-        +roam)             ; wander around notes
+        +roam              ; wander around notes
+        +roam-server
+        +super-agenda)
        ;;php               ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more--
        ;;purescript        ; javascript, but functional
