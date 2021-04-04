@@ -4,6 +4,9 @@
 
 (setq elfeed-db-directory "~/my/org/elfeed")
 
+(require 'elfeed-goodies)
+(elfeed-goodies/setup)
+
 (map!
  :leader
  :desc "elfeed" "j j" #'elfeed
