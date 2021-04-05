@@ -11,8 +11,7 @@
   (org-journal-date-prefix "#+TITLE: ")
   (org-journal-time-prefix "* ")
   (org-journal-file-format "%Y-%m-%d.org")
-  ;; (org-journal-date-format "%a, %d-%m-%Y")
-  (org-journal-date-format "%A, %d %B %Y"))
+  (org-journal-date-format "%a, %d-%m-%Y"))
 
 (setq org-journal-enable-agenda-integration t)
 
