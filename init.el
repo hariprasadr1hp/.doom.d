@@ -176,8 +176,8 @@
         +pandoc            ; export-with-pandoc support
         +pomodoro          ; pomodoro for org-mode
         +pretty            ; pretty unicode symbols
-        +present           ; using org-mode for presentation
-        +roam)             ; wander around notes
+        ;;+roam             ; wander around notes
+        +present)           ; using org-mode for presentation
 
        ;;php               ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more--

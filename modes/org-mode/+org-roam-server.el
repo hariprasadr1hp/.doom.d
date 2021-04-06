@@ -1,8 +1,9 @@
-;;; modes/org-mode/+roam-server.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org-roam-server.el -*- lexical-binding: t; -*-
 
 ;;-------------------------------------------------------------
 ;; org-roam-server
 ;;-------------------------------------------------------------
+
 ;; Interactive org-roam server graph
 (require 'simple-httpd)
 (setq httpd-root "/var/www")
