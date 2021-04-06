@@ -27,10 +27,10 @@
     ("C-c m >" . hp/org-roam-find-directory-testing)
     ("C-c m d" . org-roam-dailies-map)
     ("C-c m j" . org-roam-jump-to-index)
-    ("C-c m b" . org-roam-switch-to-buffer)
+    ("C-c m b" . org-roam-switch-to-buffer))
     ("C-c m g" . org-roam-graph))
 
-    :map org-mode-map
+    (:map org-mode-map
     (("C-c m i" . org-roam-insert)))
 
   :config

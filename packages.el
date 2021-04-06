@@ -9,7 +9,6 @@
 (package! company-org-roam
    :recipe (:host github :repo "jethrokuan/company-org-roam"))
 (package! deadgrep)
-(package! elfeed-goodies)
 (package! elfeed-org)
 (package! emms)
 (package! gruvbox-theme)
@@ -20,8 +19,6 @@
 (package! org-brain)
 (package! org-noter)
 (package! org-noter-pdftools)
-(package! org-roam
-  :recipe (:host github :repo "org-roam/org-roam" :branch "v2"))
 (package! org-roam-bibtex)
 (package! org-roam-server)
 (package! org-super-agenda)
