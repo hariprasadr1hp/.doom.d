@@ -4,7 +4,6 @@
 ;; sync' after modifying this file!
 
 ;; setting the environment
-(load! "+ui")
 (load! "+misc")
 
 
@@ -14,6 +13,10 @@
 
 ;; loading language setup 
 (load! "lang/+config")
+
+
+;; loading ui setup
+(load! "ui/+config")
 
 ;; temporary config
 (load! "temp")

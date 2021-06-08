@@ -1,4 +1,5 @@
-;;; $DOOM_DIR/+ui.el -*- lexical-binding: t; -*-
+;;; ui/+basic.el -*- lexical-binding: t; -*-
+
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
