@@ -23,7 +23,7 @@
    org-roam-server-serve-files nil
    org-roam-server-served-file-extensions '("pdf" "mp4" "ogv" "svg")
    org-roam-server-network-poll t
-   org-roam-server-network-arrows t
+   org-roam-server-network-arrows nil
    org-roam-server-network-label-truncate t
    org-roam-server-network-label-truncate-length 60
    org-roam-server-network-label-wrap-length 20)
