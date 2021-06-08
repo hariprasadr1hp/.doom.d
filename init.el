@@ -215,4 +215,4 @@
 
        :config
        ;;literate
-       (default +bindings +snippets +evil-commands +smartparens))
+       (default +bindings +snippets +evil-commands))
