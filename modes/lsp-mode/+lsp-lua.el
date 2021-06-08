@@ -4,31 +4,28 @@
   :ensure t
   :commands lsp
   :hook ((lua-mode) . lsp)
-  :config
-  )
+  :config)
 
 (use-package company-lsp
   ;;:ensure t
   :after lsp-mode
   :config
   (setq company-lsp-enable-recompletion t)
-  (setq lsp-auto-configure nil)         ;(push company-lsp company-backends)
-  )
+  ;(push company-lsp company-backends)
+  (setq lsp-auto-configure nil))
 
 (defun set-company-backends-for-lua()
   "Set lua company backend."
-  (setq-local company-backends '(
-                                 (
-                                  company-lsp
-                                  company-lua
-                                  company-keywords
-                                  company-gtags
-                                  company-yasnippet
-                                  )
-                                 company-capf
-                                 company-dabbrev-code
-                                 company-files
-                                 )))
+  (setq-local company-backends
+              (quote
+               ((company-lsp
+                 company-lua
+                 company-keywords
+                 company-gtags
+                 company-yasnippet)
+                company-capf
+                company-dabbrev-code
+                company-files))))
 
 (use-package lua-mode
   ;;:ensure t
@@ -38,6 +35,4 @@
   :config
   (setq lua-indent-level 4)
   (setq lua-indent-string-contents t)
-  (setq lua-prefix-key nil)
-  )
-
+  (setq lua-prefix-key nil))
