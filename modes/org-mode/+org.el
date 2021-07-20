@@ -27,3 +27,5 @@
  org-tags-column -80
  org-log-done 'time
  org-refile-targets (quote ((nil :maxlevel . 1))))
+
+(setf org-blank-before-new-entry '((heading . always) (plain-list-item . always)))
