@@ -17,7 +17,28 @@
 
 (setq browse-url-browser-function 'eww-browse-url)
 
+(setq eww-download-directory "~/my/org/eww/")
+
+
 (map!
+ :leader
+ :desc "Eww external browser" "k b" #'eww-browse-with-external-browser
+
+ :leader
+ :desc "Eww copy url" "k c" #'eww-copy-page-url
+
+ :leader
+ :desc "Eww previous page" "k h" #'eww-back-url
+
+ :leader
+ :desc "Eww view source code" "k i" #'eww-view-source
+
+ :leader
+ :desc "Eww mode" "k k" #'eww-mode
+
+ :leader
+ :desc "Eww next page" "k l" #'eww-forward-url
+
  :leader
  :desc "Eww web browser" "k q" #'eww
 
@@ -28,15 +49,5 @@
  :desc "Search web for text between BEG/END" "k s" #'eww-search-words
 
  :leader
- :desc "Search web for text between BEG/END" "s w" #'eww-search-words
-
- :leader
- :desc "Eww previous page" "k h" #'eww-back-url
-
- :leader
- :desc "Eww next page" "k l" #'eww-forward-url
-
- :leader
- :desc "Eww view source code" "k i" #'eww-view-source
+ :desc "Eww copy url" "k y" #'eww-copy-page-url
 )
-
