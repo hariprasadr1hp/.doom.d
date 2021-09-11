@@ -9,7 +9,7 @@
 
   :custom
   (org-journal-date-prefix "#+TITLE: ")
-  (org-journal-time-prefix "* ")
+  (org-journal-time-prefix "\n* ")
   (org-journal-file-format "%Y-%m-%d.org")
   (org-journal-date-format "%a, %d-%m-%Y"))
 
