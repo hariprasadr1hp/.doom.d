@@ -50,13 +50,19 @@
  :desc "Emms stop track" "a x" #'emms-stop
 
  :leader
+ :desc "Emms stop track" "a X" #'emms-toggle-single-track
+
+ :leader
  :desc "Emms play previous track" "a p" #'emms-previous
 
  :leader
  :desc "Emms play next track" "a n" #'emms-next
 
  :leader
- :desc "Emms toggle repeat track" "a r" #'emms-toggle-repeat-track
+ :desc "Emms toggle repeat track" "a r" #'emms-random
+
+ :leader
+ :desc "Emms toggle repeat track" "a R" #'emms-toggle-repeat-track
 
  :leader
  :desc "Emms volume lower" "a ," #'emms-volume-lower
