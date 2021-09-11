@@ -1,0 +1,11 @@
+# key: jo
+# name: org-journal-fill
+# --
+** tags
++ $1
+
+** references
++ $2
+
+** overview
++ $0

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org-journal-tags
+# key: ta
+# --
+** tags
+$0

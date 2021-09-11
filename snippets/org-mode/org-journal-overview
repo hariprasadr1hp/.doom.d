@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org-journal-overview
+# key: ov
+# --
+** overview
+$0
