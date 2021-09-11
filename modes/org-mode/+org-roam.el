@@ -42,6 +42,13 @@
       "%?"
       :file-name "${slug}"
       :head "#+title: ${title}\n#+created: %u\n#+roam_alias: "${title}"\n"
+      :unnarrowed t)
+
+    ("i" "insert-sections" plain
+      (function org-roam-capture--get-point)
+      "\n\n* references\n\n* overview\n%?"
+      :file-name "${slug}"
+      :head "#+title: ${title}\n#+created: %u\n#+roam_alias: "${title}"\n"
       :unnarrowed t)))
 
    org-roam-capture-ref-templates
