@@ -1,0 +1,6 @@
+# key: jup
+# name: jupyter-dummy
+# --
+#+begin_src python :session _dummy
+$0
+#+end_src
