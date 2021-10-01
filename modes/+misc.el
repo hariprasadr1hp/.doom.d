@@ -31,4 +31,5 @@
 	"t t" #'toggle-truncate-lines)
 
 
-
+;; firefox as default browser
+(setq browse-url-browser-function 'browse-url-firefox)
