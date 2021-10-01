@@ -29,3 +29,7 @@
  org-refile-targets (quote ((nil :maxlevel . 1))))
 
 (setf org-blank-before-new-entry '((heading . always) (plain-list-item . always)))
+
+(map!
+ :leader
+ :desc "link-hint-copy-link-at-point" "m l y" #'link-hint-copy-link-at-point)
