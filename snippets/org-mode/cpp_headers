@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: cpp_headers
+# uuid: hcpp
+# key: hcpp
+# condition: t
+# --
+#+header: :includes '(<iostream> <vector>) :flags -std=c++11 :results scalar
+#+begin_src cpp
+$1
+#+end_src
