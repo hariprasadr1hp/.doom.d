@@ -5,9 +5,8 @@
 (package! all-the-icons-dired)
 (package! annotate)
 (package! ascii-art-to-unicode)
+(unpin! company-org-roam)
 (package! calibredb)
-(package! company-org-roam
-   :recipe (:host github :repo "jethrokuan/company-org-roam"))
 (package! deadgrep)
 (package! elfeed-org)
 (package! emms)
@@ -16,11 +15,12 @@
 (package! move-text)
 (package! ob-prolog)
 (package! origami)
+(unpin! org-roam)
+(package! org-roam-ui)
 (package! org-brain)
 (package! org-noter)
 (package! org-noter-pdftools)
 (package! org-roam-bibtex)
-(package! org-roam-server)
 (package! org-super-agenda)
 (package! pass)
 (package! pocket-reader)
@@ -28,6 +28,7 @@
 (package! sql-indent)
 (package! vue-mode)
 (package! wakatime-mode)
+(package! websocket)
 (package! zotero)
 
 

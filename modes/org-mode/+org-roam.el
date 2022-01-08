@@ -3,93 +3,44 @@
 ;;-------------------------------------------------------------
 ;; org-roam
 ;;-------------------------------------------------------------
-;;(setq org-roam-directory "~/my/org/roam")
 
 (use-package org-roam
-  :load-path
-  ("~/my/org/roam/")
   :ensure t
-
-  :hook
-  ((after-init . org-roam-mode))
-
+  :init
+  (setq org-roam-v2-ack t)
+  
   :custom
   (org-roam-directory "~/my/org/roam")
-  (org-roam-index-file "index.org")
-  (org-roam-dailies-directory "~/my/org/scratch/")
-
-  :bind
-  (:map org-roam-mode-map
-   (("C-c m l" . org-roam)
-    ("C-c m F" . org-roam-find-file)
-    ("C-c m r" . org-roam-find-ref)
-    ("C-c m ." . org-roam-find-directory)
-    ("C-c m >" . hp/org-roam-find-directory-testing)
-    ("C-c m d" . org-roam-dailies-map)
-    ("C-c m j" . org-roam-jump-to-index)
-    ("C-c m b" . org-roam-switch-to-buffer))
-    ("C-c m g" . org-roam-graph))
-
-    (:map org-mode-map
-    (("C-c m i" . org-roam-insert)))
-
-  :config
-  (setq
-   org-roam-capture-templates
-   (quote
-    (("d" "default" plain
-      (function org-roam-capture--get-point)
+  (org-roam-index-file "index.org") ;; --
+  (org-roam-dailies-directory "~/my/org/scratch/") ;; --
+  (org-roam-completion-everywhere t)
+  (org-roam-capture-templates
+   '(("d" "default" plain
       "%?"
-      :file-name "${slug}"
-      :head "#+title: ${title}\n#+created: %u\n#+roam_alias: "${title}"\n"
-      :unnarrowed t)
-
-    ("i" "insert-sections" plain
-      (function org-roam-capture--get-point)
-      "\n\n* references\n\n* overview\n%?"
-      :file-name "${slug}"
-      :head "#+title: ${title}\n#+created: %u\n#+roam_alias: "${title}"\n"
+      :if-new (file+head "%${slug}.org" "#+title: ${title}\n")
       :unnarrowed t)))
 
-   org-roam-capture-ref-templates
-   (quote
-    (("r" "ref" plain
-      (function org-roam-capture--get-point)
-      ""
-      :file-name "web/${slug}"
-      :head "#+title: ${title}\n#+roam_key: ${ref}\n#+created: %u\n#+last_modified: %U\n\n%(hp/org-protocol-insert-selection-dwim \"%i\")"
-      :unnarrowed t)
-
-     ("i" "incremental" plain
-      (function org-roam-capture--get-point)
-      "* %?\n%(hp/org-protocol-insert-selection-dwim \"%i\")"
-      :file-name "web/${slug}"
-      :head "#+title: ${title}\n#+roam_key: ${ref}\n#+created: %u\n#+last_modified: %U\n\n"
-      :unnarrowed t
-      :empty-lines-before 1)))
-
-   org-roam-dailies-capture-templates
-   (quote
-    (("d" "default" entry
-      #'org-roam-capture--get-point
-      "* %?"
-      :file-name "scratch/%<%Y-%m-%d>"
-      :head "#+title: %<%Y-%m-%d>\n\n"
-      :add-created t))))
-
-  (defvar hp/org-roam-directory-testing "~/my/org/slip-box-testing")
-
-  (defun hp/org-roam-find-directory-testing ()
-    (interactive)
-    (find-file hp/org-roam-directory-testing)))
+  :bind (("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert)
+         :map org-mode-map
+         ("C-M-i" . completion-at-point))
+  
+  :config
+  (org-roam-setup))
 
 
-(setq org-roam-title-sources '((title headline) alias))
+(use-package! websocket
+    :after org-roam)
 
-
-(require 'company-org-roam)
-    (use-package company-org-roam
-      :when (featurep! :completion company)
-      :after org-roam
-      :config
-      (set-company-backend! 'org-mode '(company-org-roam company-yasnippet company-dabbrev)))
+(use-package! org-roam-ui
+    :after org-roam ;; or :after org
+;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+;;         a hookable mode anymore, you're advised to pick something yourself
+;;         if you don't care about startup time, use
+;;  :hook (after-init . org-roam-ui-mode)
+    :config
+    (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start nil))
