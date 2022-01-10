@@ -17,7 +17,9 @@
   (org-roam-capture-templates
    '(("d" "default" plain
       "%?"
-      :if-new (file+head "%${slug}.org" "#+title: ${title}\n")
+      :if-new (file+head "${slug}.org" "#+title: ${title}\n")
+      ;; :file-name "web/${slug}"
+      ;; :head "#+title: ${title}\n"
       :unnarrowed t)))
 
   :bind (("C-c n l" . org-roam-buffer-toggle)
