@@ -19,7 +19,7 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one)
 
-(setq doom-font (font-spec :family "monospace" :size 20 :weight 'light)
+(setq doom-font (font-spec :family "Hack Nerd Font" :size 20 :weight 'light)
       doom-variable-pitch-font (font-spec :family "sans" :size 22)
       doom-big-font (font-spec :family "sans" :size 26))
 
