@@ -33,3 +33,5 @@
 (map!
  :leader
  :desc "link-hint-copy-link-at-point" "m l y" #'link-hint-copy-link-at-point)
+
+(add-hook 'org-mode-hook(lambda() (company-mode -1)))
