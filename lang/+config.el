@@ -6,4 +6,4 @@
 (load! "+ruby")
 (load! "+yaml")
 (load! "+web")
-(load! "+graphviz")
+; (load! "+graphviz")

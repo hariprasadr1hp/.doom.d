@@ -6,14 +6,14 @@
 ;; setting the environment
 (load! "+misc")
 
-
 ;; loading modes
 (load! "modes/+config")
 
+;; loading custom setup
+(load! "hp_modules/+config")
 
 ;; loading language setup 
 (load! "lang/+config")
-
 
 ;; loading ui setup
 (load! "ui/+config")
