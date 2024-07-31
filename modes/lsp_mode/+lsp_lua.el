@@ -1,4 +1,4 @@
-;;; modes/lsp-mode/+lsp-lua.el -*- lexical-binding: t; -*-
+;;; modes/lsp-mode/+lsp_lua.el -*- lexical-binding: t; -*-
 
 ;; (use-package lsp-mode
 ;;   :ensure t

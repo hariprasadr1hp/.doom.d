@@ -1,4 +1,4 @@
-;;; modes/org-mode/+org-pomodoro.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org_pomodoro.el -*- lexical-binding: t; -*-
 
 ;; (setq
 ;;  org-pomodoro-play-sounds t

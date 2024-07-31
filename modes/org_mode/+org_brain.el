@@ -1,4 +1,4 @@
-;;; modes/org-mode/+org-brain.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org_brain.el -*- lexical-binding: t; -*-
 
 ;;-------------------------------------------------------------
 ;; org-brain

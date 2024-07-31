@@ -1,4 +1,4 @@
-;;; modes/org-mode/+org-latex.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org_latex.el -*- lexical-binding: t; -*-
 
 ;;-------------------------------------------------------------
 ;; latex environment in org-mode

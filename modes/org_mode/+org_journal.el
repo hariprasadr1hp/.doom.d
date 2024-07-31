@@ -1,4 +1,4 @@
-;;; modes/org-mode/+org-journal.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org_journal.el -*- lexical-binding: t; -*-
 
 ;;-------------------------------------------------------------
 ;; org-journal

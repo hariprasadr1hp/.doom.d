@@ -1,4 +1,4 @@
-;;; modes/org-mode/+org-roam.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org_roam.el -*- lexical-binding: t; -*-
 
 ;;-------------------------------------------------------------
 ;; org-roam

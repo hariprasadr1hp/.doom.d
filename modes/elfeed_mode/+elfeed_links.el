@@ -1,4 +1,4 @@
-;;; modes/elfeed-mode/+elfeed-links.el -*- lexical-binding: t; -*-
+;;; modes/elfeed-mode/+elfeed_links.el -*- lexical-binding: t; -*-
 
 (setq elfeed-feeds
   '(

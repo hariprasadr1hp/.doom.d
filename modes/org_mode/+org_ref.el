@@ -1,4 +1,4 @@
-;;; modes/org-mode/+org-ref.el -*- lexical-binding: t; -*-
+;;; modes/org-mode/+org_ref.el -*- lexical-binding: t; -*-
 
 ;;(setq reftex-default-bibliography '("~/my/references.bib"))
 
