@@ -1,4 +1,3 @@
-#+TITLE:   doom-config
-#+AUTHOR: Hari Prasad Radhakrishnan
-
-=./doom.d= config files for /doom emacs/
+* Notes
++ =./doom.d= config files for /doom emacs/
++ ensure =~/my/org= directory exists. org-related files (~org-roam~, ~org-journal~ etc.,) will be stored here
