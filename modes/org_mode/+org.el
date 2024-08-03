@@ -7,7 +7,6 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/my/org/")
-;;(global-company-mode '(not org-mode))
 
 ;;shift select
 (setq org-support-shift-select t)
@@ -30,4 +29,3 @@
 
 (setf org-blank-before-new-entry '((heading . always) (plain-list-item . always)))
 
-(add-hook 'org-mode-hook(lambda() (company-mode -1)))

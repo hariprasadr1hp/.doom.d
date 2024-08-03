@@ -15,6 +15,3 @@
 
 (setq org-journal-enable-agenda-integration t)
 
-
-(after! org-journal
-  (set-company-backend! 'org-journal-mode 'company-org-roam))

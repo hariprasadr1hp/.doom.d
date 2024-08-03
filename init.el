@@ -16,27 +16,16 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
-       (company         ; the ultimate code completion backend
-        ;;+auto         ; code completion, as you type
-        +childframe     ; nicer ui
-        +lsp
-        +tng)
-       ;;helm           ; the *other* search engine for love and life
-       ;;ido            ; the other *other* search engine...
-       (ivy
-        +fuzzy         ;a search engine for love and life
-        +icons
-        +prescient)
+       (corfu +orderless)  ; complete with cap(f), cape and a flying feather!
+       vertico           ; the search engine of the future
 
        :ui
        deft              ; notational velocity for Emacs--
        doom              ; what makes DOOM look the way it does
-       doom-dashboard    ; a nifty splash screen for Emacs
+       ;;doom-dashboard    ; a nifty splash screen for Emacs
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
        (emoji +unicode)  ; 🙂--
-       ;;fill-column       ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
-       ;;hydra
        ;;indent-guides     ; highlighted indent columns
        ;;(ligatures +extra)  ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
@@ -48,11 +37,12 @@
         +all
         +defaults)
        ;;tabs              ; a tab bar for Emacs
-       treemacs          ; a project drawer, like neotree but cooler--
+       ;;treemacs          ; a project drawer, like neotree but cooler--
        ;;unicode           ; extended unicode support for various languages
        ;;vc-gutter         ; vcs diff in the fringe
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
-       (window-select +numbers)    ; visually switch windows--
+       (window-select
+        +numbers)          ; visually switch windows--
        workspaces        ; tab emulation, persistence & separate workspaces
        zen               ; distraction-free coding or writing--
 
@@ -63,7 +53,7 @@
        (format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
-       multiple-cursors  ; editing in many places at once
+       ;;multiple-cursors  ; editing in many places at once
        ;;objed             ; text object editing for the innocent
        ;;parinfer          ; turn lisp into python, sort of
        rotate-text       ; cycle region at point between text candidates
@@ -76,7 +66,8 @@
         +open)
        electric          ; smarter, keyword-based electric-indent
        ;;ibuffer         ; interactive buffer management
-       (undo +tree)      ; persistent, smarter undo for your inevitable mistakes
+       (undo
+        +tree)         ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
 
        :term
@@ -96,23 +87,23 @@
        ;;direnv
        docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
-       ein                 ; tame Jupyter notebooks with emacs--
+       ;;ein                 ; tame Jupyter notebooks with emacs--
        (eval +overlay)     ; run code, run (also, repls)
-       ;;gist              ; interacting with github gists
+       ;;gist				   ; interacting with github gists
        (lookup             ; navigate your code and its documentation
         +devdocs           ; devdocs online
         +dictionary
         +docsets)          ; devdocs locally
        lsp
        (magit +forge)    ; a git porcelain for Emacs
-       make              ; run make tasks from Emacs--
+       ;;make              ; run make tasks from Emacs--
        pass              ; password manager for nerds
        pdf               ; pdf enhancements--
        ;;prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
-       taskrunner        ; taskrunner for all your projects--
+       ;;taskrunner        ; taskrunner for all your projects -- commented out, since causing build issues
        ;;terraform         ; infrastructure as code
-       ;;tmux              ; an API for interacting with tmux
+       tmux              ; an API for interacting with tmux
        upload            ; map local to remote projects via ssh/ftp
 
        :os
@@ -180,12 +171,12 @@
         +present)           ; using org-mode for presentation
 
        ;;php               ; perl's insecure younger brother
-       plantuml          ; diagrams for confusing people more--
+       ;;plantuml          ; diagrams for confusing people more--
        ;;purescript        ; javascript, but functional
        (python            ; beautiful is better than ugly--
         +lsp
         +pyright)
-       qt                ; the 'cutest' gui framework ever--
+       ;;qt                ; the 'cutest' gui framework ever--
        ;;racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
        ;;rest              ; Emacs as a REST client
@@ -201,6 +192,7 @@
        ;;terra             ; Earth and Moon in alignment for performance.
        web               ; the tubes
        yaml              ; JSON, but readable--
+       ;;zig               ; C, but simpler
 
        :email
        (:if (executable-find "mu")(mu4e +org +gmail))
