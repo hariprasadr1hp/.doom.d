@@ -1,33 +1,25 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; $DOOMDIR/packages.el
 
+(unpin! org-roam)
 
 (package! all-the-icons-dired)
 (package! annotate)
 (package! ascii-art-to-unicode)
-(package! calibredb)
 (package! deadgrep)
 (package! elfeed-org)
 (package! emms)
-(package! gruvbox-theme)
 (package! graphviz-dot-mode)
-(package! move-text)
+(package! move-text)				;; move the current-line up/down using M-UP/DOWN
 (package! ob-prolog)
-(package! origami)
-(unpin! org-roam)
-(package! org-roam-ui)
-(package! org-brain)
 (package! org-noter)
 (package! org-noter-pdftools)
 (package! org-roam-bibtex)
+(package! org-roam-ui)
 (package! org-super-agenda)
-(package! pocket-reader)
 (package! simple-httpd)
 (package! sql-indent)
-(package! vue-mode)
-(package! wakatime-mode)
 (package! websocket)
-(package! zotero)
 
 
 

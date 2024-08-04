@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: hugo
-# key: hugo
+# name: puml
+# key: <puml
 # --
 #+begin_src plantuml :file mindmap.eps
 @startmindmap

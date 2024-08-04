@@ -14,6 +14,10 @@
   (org-roam-index-file "index.org") ;; --
   (org-roam-dailies-directory "~/my/org/scratch/") ;; --
   (org-roam-completion-everywhere t)
+  (org-todo-keywords '((sequence "TODO(t)" "STRT(s)" "HOLD(h)" "|" "DONE(d)" "CNCL(c)")))
+  (org-todo-keyword-faces '(("STRT" . +org-todo-active)
+                            ("HOLD" . +org-todo-onhold)
+                            ("CNCL" . +org-todo-cancel)))
   (org-roam-capture-templates
    '(("d" "default" plain
       "%?"
@@ -21,6 +25,7 @@
       ;; :file-name "web/${slug}"
       ;; :head "#+title: ${title}\n"
       :unnarrowed t)))
+  
 
   :bind (("C-c n l" . org-roam-buffer-toggle)
          ("C-c n f" . org-roam-node-find)
@@ -29,20 +34,20 @@
          ("C-M-i" . completion-at-point))
   
   :config
-  (org-roam-setup))
+  (org-roam-db-autosync-enable))
 
 
 (use-package! websocket
-    :after org-roam)
+  :after org-roam)
 
 (use-package! org-roam-ui
-    :after org-roam ;; or :after org
-;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
-;;         a hookable mode anymore, you're advised to pick something yourself
-;;         if you don't care about startup time, use
-;;  :hook (after-init . org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-sync-theme t
-          org-roam-ui-follow t
-          org-roam-ui-update-on-save t
-          org-roam-ui-open-on-start nil))
+  :after org-roam ;; or :after org
+  ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+  ;;         a hookable mode anymore, you're advised to pick something yourself
+  ;;         if you don't care about startup time, use
+  ;;  :hook (after-init . org-roam-ui-mode)
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start nil))

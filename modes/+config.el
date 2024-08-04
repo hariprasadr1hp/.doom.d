@@ -2,6 +2,7 @@
 
 (load! "+basic")
 (load! "+bookmarks")
+(load! "+corfu")
 (load! "+deft")
 (load! "+dired")
 (load! "+emms")

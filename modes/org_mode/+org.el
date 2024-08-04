@@ -8,18 +8,12 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/my/org/")
 
-;;shift select
 (setq org-support-shift-select t)
 
-;; org-ellipsis
 (setq org-ellipsis " ▾ ")
 
-;; indentation to outline mode
 (setq org-adapt-indentation nil)
 
-;; show habites
-
-;; org-bullets
 (setq org-bullets-bullet-list '("◉" "⋆" "○" "‣"))
 
 (setq
@@ -27,5 +21,6 @@
  org-log-done 'time
  org-refile-targets (quote ((nil :maxlevel . 1))))
 
+;; add a blank link by default when adding a new item
 (setf org-blank-before-new-entry '((heading . always) (plain-list-item . always)))
 
