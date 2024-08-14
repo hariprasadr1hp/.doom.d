@@ -39,7 +39,7 @@
   "Path to the Firefox executable.")
 
 
-(defun open-link-in-firefox ()
+(defun hp-open-link-in-firefox ()
   "Open the link at point in Firefox if it starts with 'https://'."
   (interactive)
   (let* ((element (org-element-context))
@@ -51,7 +51,7 @@
       (message "No valid HTTPS link at point"))))
 
 
-(defun open-link-in-brave ()
+(defun hp-open-link-in-brave ()
   "Open the link at point in Brave if it starts with 'https://'."
   (interactive)
   (let* ((element (org-element-context))
@@ -63,7 +63,7 @@
       (message "No valid HTTPS link at point"))))
 
 
-(defun open-link-in-chrome ()
+(defun hp-open-link-in-chrome ()
   "Open the link at point in Chrome if it starts with 'https://'."
   (interactive)
   (let* ((element (org-element-context))
@@ -75,7 +75,8 @@
       (message "No valid HTTPS link at point"))))
 
 
+(map! :leader :desc "open-link-in-[B]rave" "m l b" #'hp-open-link-in-brave)
+(map! :leader :desc "open-link-in-chro[M]e" "m l m" #'hp-open-link-in-chrome)
+(map! :leader :desc "open-link-in-[E]ww" "m l e" #'hp-eww-open-link-at-point-no-split)
+(map! :leader :desc "open-link-in-[F]irefox" "m l f" #'hp-open-link-in-firefox)
 (map! :leader :desc "link-hint-copy-link-at-point" "m l y" #'link-hint-copy-link-at-point)
-(map! :leader :desc "open-link-in-[F]irefox" "m l f" #'open-link-in-firefox)
-(map! :leader :desc "open-link-in-[B]rave" "m l b" #'open-link-in-brave)
-(map! :leader :desc "open-link-in-chro[M]e" "m l m" #'open-link-in-chrome)

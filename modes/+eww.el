@@ -19,6 +19,20 @@
 
 (setq eww-download-directory "~/my/org/eww/")
 
+(defun hp-eww-open-link-at-point-no-split ()
+  "Open the link at point in a new buffer with eww without splitting the window."
+  (interactive)
+  (let ((url (thing-at-point 'url t))
+        (buffer (get-buffer-create "*eww*"))
+        (display-buffer-alist nil))  ;; Disable splitting rules temporarily
+    (if url
+        (progn
+          (with-current-buffer buffer
+            (eww-mode)
+            (eww url))
+          (switch-to-buffer buffer))
+      (message "No URL found at point."))))
+
 
 (map!
  :leader

@@ -1,3 +1,4 @@
-* Notes
-+ =./doom.d= config files for /doom emacs/
+** Notes
++ ~doom~ config files for /doom emacs/
 + ensure =~/my/org= directory exists. org-related files (~org-roam~, ~org-journal~ etc.,) will be stored here
+
