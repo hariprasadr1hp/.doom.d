@@ -2,6 +2,6 @@
 # name: src-python
 # key: srcp
 # --
-#+begin_src python :eval no :results scalar
+#+begin_src python :results scalar :eval no
 $0
 #+end_src

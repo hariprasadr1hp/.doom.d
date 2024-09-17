@@ -2,6 +2,6 @@
 # name: src-bash
 # key: srcb
 # --
-#+begin_src bash :eval no :results scalar
+#+begin_src bash :results scalar :eval no
 $0
 #+end_src
