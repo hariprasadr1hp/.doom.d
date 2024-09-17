@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-python
+# key: srcp
+# --
+#+begin_src python :results scalar :eval no
+$0
+#+end_src

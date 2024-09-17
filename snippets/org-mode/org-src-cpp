@@ -1,8 +1,6 @@
 # -*- mode: snippet -*-
-# name: cpp_headers
-# uuid: hcpp
-# key: hcpp
-# condition: t
+# name: org-src-cpp
+# key: srcc
 # --
 #+header: :includes '(<iostream> <vector>) :flags -std=c++11 :results scalar
 #+begin_src cpp

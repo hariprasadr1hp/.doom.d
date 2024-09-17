@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org-latex-preview
+# key: jp
+# --
+#+startup: latexpreview
+$0

@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: latexgather
+# name: org-latex-gather
 # key: <ga
 # --
 \begin{gather*}\label{eq:$1}

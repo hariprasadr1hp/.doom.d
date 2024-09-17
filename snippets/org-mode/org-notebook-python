@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-notebook-python
+# key: jpy
+# --
+#+begin_src python :session $1
+$0
+#+end_src

@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: src-python
-# key: srcp
-# --
-#+begin_src python :eval no :results scalar
-$0
-#+end_src

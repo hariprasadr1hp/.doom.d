@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-sql
+# key: srcq
+# --
+#+begin_src sql :results scalar :eval no
+$0
+#+end_src

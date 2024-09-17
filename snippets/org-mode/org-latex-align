@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: latexalign
+# name: org-latex-align
 # key: <al
 # --
 \begin{align*}\label{eq:$1}

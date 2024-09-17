@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org-src-tags
+# key: srct
+# --
+:results scalar :eval no
+$0

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-bash
+# key: srcb
+# --
+#+begin_src bash :results scalar :eval no
+$0
+#+end_src
