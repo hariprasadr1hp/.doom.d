@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: latexeqn
+# name: org-latex-eqn
 # key: <eq
 # --
 \begin{equation*}\label{eq:$1}

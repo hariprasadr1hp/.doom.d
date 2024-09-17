@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: puml
-# key: <puml
+# name: org-plantuml-mindmap
+# key: pmind
 # --
 #+begin_src plantuml :file mindmap.eps
 @startmindmap

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-lua
+# key: srcl
+# --
+#+begin_src lua :results scalar :eval no
+$0
+#+end_src

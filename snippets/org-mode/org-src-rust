@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-rust
+# key: srcr
+# --
+#+begin_src rust :results scalar :eval no
+$0
+#+end_src
