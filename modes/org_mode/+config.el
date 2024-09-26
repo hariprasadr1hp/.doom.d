@@ -6,4 +6,3 @@
 (load! "+org_roam")
 (load! "+org_roam_ui")
 (load! "+org_export")
-(load! "+org_pomodoro")
