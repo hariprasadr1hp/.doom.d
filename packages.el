@@ -7,8 +7,6 @@
 (package! annotate)
 (package! ascii-art-to-unicode)
 (package! deadgrep)
-(package! elfeed-org)
-(package! emms)
 (package! graphviz-dot-mode)
 (package! move-text)				;; move the current-line up/down using M-UP/DOWN
 (package! ob-prolog)
