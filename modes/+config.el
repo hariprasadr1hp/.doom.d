@@ -6,6 +6,7 @@
 (load! "+deft")
 (load! "+dired")
 (load! "+elisp")
+(load! "+ellama")
 (load! "+eshell")
 (load! "+evil")
 (load! "+eww")
