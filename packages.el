@@ -6,9 +6,10 @@
 (package! all-the-icons-dired)
 (package! annotate)
 (package! ascii-art-to-unicode)
+(package! dotenv-mode)
 (package! deadgrep)
 (package! graphviz-dot-mode)
-(package! move-text)				;; move the current-line up/down using M-UP/DOWN
+(package! move-text) ;; move the current-line up/down using M-UP/DOWN
 (package! ob-prolog)
 (package! org-noter)
 (package! org-noter-pdftools)

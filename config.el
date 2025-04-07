@@ -3,6 +3,22 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
+;; add paths
+(add-to-list 'exec-path "/usr/local/bin/")
+
+;; (require 'dotenv-mode) ; unless installed from a package
+
+(defun load-env-file (filepath)
+  "Load environment variables from a .env file."
+  (when (file-exists-p filepath)
+    (with-temp-buffer
+      (insert-file-contents filepath)
+      (dolist (line (split-string (buffer-string) "\n" t))
+        (when (string-match "\\`\\([^#= \t]+\\)=\\(.*\\)\\'" line)
+          (setenv (match-string 1 line) (match-string 2 line)))))))
+
+(load-env-file (expand-file-name ".env" doom-user-dir))
+
 ;; setting the environment
 (load! "+misc")
 
