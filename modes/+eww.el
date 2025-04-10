@@ -36,32 +36,38 @@
 
 (map!
  :leader
- :desc "Eww external browser" "k b" #'eww-browse-with-external-browser
+ :desc "eww-browser-external" "k b" #'eww-browse-with-external-browser
 
  :leader
- :desc "Eww copy url" "k c" #'eww-copy-page-url
+ :desc "eww-copy-url" "k c" #'eww-copy-page-url
 
  :leader
- :desc "Eww previous page" "k h" #'eww-back-url
+ :desc "eww-prev-page" "k h" #'eww-back-url
 
  :leader
- :desc "Eww view source code" "k i" #'eww-view-source
+ :desc "eww-images-toggle" "k i" #'eww-toggle-images
 
  :leader
- :desc "Eww mode" "k k" #'eww-mode
+ :desc "eww-mode-activate" "k K" #'eww-mode
 
  :leader
- :desc "Eww next page" "k l" #'eww-forward-url
+ :desc "eww-next-page" "k l" #'eww-forward-url
 
  :leader
- :desc "Eww web browser" "k q" #'eww
+ :desc "eww-web-browser" "k k" #'eww
 
  :leader
- :desc "Eww reload page" "k r" #'eww-reload
+ :desc "eww-reload-page" "k r" #'eww-reload
 
  :leader
  :desc "Search web for text between BEG/END" "k s" #'eww-search-words
 
  :leader
- :desc "Eww copy url" "k y" #'eww-copy-page-url
-)
+ :desc "eww-text-readable" "k t" #'eww-readable
+
+ :leader
+ :desc "eww-inspect-source" "k u" #'eww-view-source
+
+ :leader
+ :desc "eww-yank-url" "k y" #'eww-copy-page-url
+ )
