@@ -6,7 +6,10 @@
 ;; add paths
 (add-to-list 'exec-path "/usr/local/bin/")
 
-;; (require 'dotenv-mode) ; unless installed from a package
+;; read path variables from the shell
+(use-package! exec-path-from-shell
+  :config
+  (exec-path-from-shell-initialize))
 
 (defun load-env-file (filepath)
   "Load environment variables from a .env file."
