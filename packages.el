@@ -10,6 +10,7 @@
 (package! deadgrep)
 (package! graphviz-dot-mode)
 (package! ellama)
+(package! exec-path-from-shell)
 (package! move-text) ;; move the current-line up/down using M-UP/DOWN
 (package! ob-prolog)
 (package! org-noter)
