@@ -1,5 +1,6 @@
 ;;; modes/+config.el -*- lexical-binding: t; -*-
 
+(load! "+preload")
 (load! "+basic")
 (load! "+bookmarks")
 (load! "+corfu")
@@ -14,6 +15,7 @@
 (load! "+misc")
 (load! "+projectile")
 (load! "+registers")
+(load! "+treesitter")
 (load! "+vterm")
 (load! "+winner")
 
