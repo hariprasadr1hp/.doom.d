@@ -13,6 +13,7 @@
 (package! exec-path-from-shell)
 (package! move-text) ;; move the current-line up/down using M-UP/DOWN
 (package! ob-prolog)
+(package! ob-mermaid)
 (package! org-noter)
 (package! org-noter-pdftools)
 (package! org-roam-bibtex)

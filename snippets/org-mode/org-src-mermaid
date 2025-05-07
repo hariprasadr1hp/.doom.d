@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-mermaid
+# key: srcm
+# --
+#+begin_src mermaid
+$0
+#+end_src
