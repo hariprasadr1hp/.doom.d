@@ -5,6 +5,7 @@
 
 ;; add paths
 (add-to-list 'exec-path "/usr/local/bin/")
+(add-to-list 'exec-path "/opt/homebrew/bin")
 
 ;; read path variables from the shell
 (use-package! exec-path-from-shell
@@ -37,8 +38,8 @@
 ;; loading ui setup
 (load! "ui/+config")
 
-;; temporary config
-(load! "temp")
+;; loading ui setup
+(load! "+keymaps")
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;

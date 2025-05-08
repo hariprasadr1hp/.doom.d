@@ -5,6 +5,7 @@
 (load! "+bookmarks")
 (load! "+corfu")
 (load! "+deft")
+(load! "+dictionary")
 (load! "+dired")
 (load! "+elisp")
 (load! "+ellama")
