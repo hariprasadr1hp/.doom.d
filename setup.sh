@@ -38,7 +38,7 @@ setup_latex() {
 
     if $IS_MACOS; then
         install_if_missing "brew" '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
-        brew install --cask basictex
+        brew install --cask mactex
         export PATH="/Library/TeX/texbin:$PATH"
         if ! grep -q "/Library/TeX/texbin" ~/.zshrc 2>/dev/null; then
             echo 'export PATH="/Library/TeX/texbin:$PATH"' >>~/.zshrc
