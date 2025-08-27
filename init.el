@@ -98,7 +98,6 @@
         +ipython
         +journal
         +pandoc            ; export-with-pandoc support
-        +pretty            ; pretty unicode symbols
         +roam2             ; wander around notes
         +present)           ; using org-mode for presentation
        (python            ; beautiful is better than ugly--

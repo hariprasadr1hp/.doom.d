@@ -1,8 +1,5 @@
 ;;; modes/org-mode/+org_journal.el -*- lexical-binding: t; -*-
 
-;;-------------------------------------------------------------
-;; org-journal
-;;-------------------------------------------------------------
 (use-package org-journal
   :bind
   ("C-c n j" . org-journal-new-entry)
