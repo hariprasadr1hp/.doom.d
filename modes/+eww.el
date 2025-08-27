@@ -130,7 +130,7 @@
  :desc "eww-copy-url" "k c" #'eww-copy-page-url
 
  :leader
- :desc "eww-copy-url" "k d" #'eww-download
+ :desc "eww-download" "k d" #'eww-download
 
  :leader
  :desc "eww-prev-page" "k h" #'eww-back-url

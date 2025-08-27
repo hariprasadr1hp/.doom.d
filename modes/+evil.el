@@ -2,4 +2,4 @@
 
 (setq evil-want-fine-undo t)
 
-(setq evil-escape-key-sequence "jdx")
+(setq evil-escape-key-sequence nil)

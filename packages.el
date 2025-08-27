@@ -18,6 +18,7 @@
 (package! org-noter-pdftools)
 (package! org-roam-bibtex)
 (package! org-roam-ui)
+(package! org-superstar)
 (package! org-super-agenda)
 (package! tree-sitter)
 (package! tree-sitter-langs)
