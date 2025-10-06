@@ -61,6 +61,7 @@
 
        :tools
        (eval +overlay)     ; run code, run (also, repls)
+       terraform           ; infra as code
        (lookup             ; navigate your code and its documentation
         +devdocs           ; devdocs online
         +dictionary

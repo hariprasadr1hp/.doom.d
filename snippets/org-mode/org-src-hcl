@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-hcl
+# key: srch
+# --
+#+begin_src hcl :results scalar :eval no
+$0
+#+end_src
