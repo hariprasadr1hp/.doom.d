@@ -10,8 +10,10 @@ IS_LINUX=false
 
 if [[ "$OS" == "Darwin" ]]; then
     IS_MACOS=true
+
 elif [[ "$OS" == "Linux" ]]; then
     IS_LINUX=true
+
 else
     echo "Unsupported OS: ${OS}. Only for Linux and MacOS "
     exit 1

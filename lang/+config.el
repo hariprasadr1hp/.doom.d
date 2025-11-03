@@ -3,6 +3,7 @@
 (load! "+misc")
 (load! "+python")
 (load! "+cpp")
+(load! "+hurl")
 (load! "+ruby")
 (load! "+yaml")
 (load! "+web")

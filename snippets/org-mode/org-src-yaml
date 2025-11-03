@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-src-yaml
+# key: srcy
+# --
+#+begin_src yaml :results scalar :eval no
+$0
+#+end_src

@@ -8,9 +8,10 @@
 (package! ascii-art-to-unicode)
 (package! dotenv-mode)
 (package! deadgrep)
-(package! graphviz-dot-mode)
 (package! ellama)
 (package! exec-path-from-shell)
+(package! graphviz-dot-mode)
+(package! hurl-mode :recipe (:host github :repo "jaszhe/hurl-mode" :files ("*.el")))
 (package! move-text) ;; move the current-line up/down using M-UP/DOWN
 (package! ob-prolog)
 (package! ob-mermaid)
