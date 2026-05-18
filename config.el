@@ -7,9 +7,11 @@
 (add-to-list 'exec-path "/usr/local/bin/")
 (add-to-list 'exec-path "/opt/homebrew/bin")
 
-;; read path variables from the shell
+;; use bash (where pyenv is initialized) for shell commands and PATH import
+(setq shell-file-name "/bin/bash")
 (use-package! exec-path-from-shell
   :config
+  (setq exec-path-from-shell-shell-name "/bin/bash")
   (exec-path-from-shell-initialize))
 
 (defun load-env-file (filepath)
